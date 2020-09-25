@@ -1,8 +1,11 @@
 #pragma once
-class AppState
-{
-private:
 
-public:
-	virtual void Update();
-};
+namespace HaikuApp {
+	class AppState
+	{
+	private:
+
+	public:
+		virtual void Update() = 0;
+	};
+}

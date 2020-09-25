@@ -1,3 +1,3 @@
 #include "AppState.h"
 
-// TODO: This file may not need implementation and henceforth may not be needed.
+// TODO: IDK if I need a .cpp file if I only have a pure virtual function...

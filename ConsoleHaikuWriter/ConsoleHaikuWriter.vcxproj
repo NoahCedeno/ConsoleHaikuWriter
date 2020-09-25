@@ -139,9 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AppState.cpp" />
     <ClCompile Include="ConsoleHaikuWriter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AppState.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

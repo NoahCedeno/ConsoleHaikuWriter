@@ -7,7 +7,5 @@ int main()
 {
 	std::cout << "Entered Main!\n";
 
-	std::cin;
-
 	return 0;
 }
