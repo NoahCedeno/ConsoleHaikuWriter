@@ -1,0 +1,45 @@
+Alright, so this is a little project that I've been sitting on for too long without actually making it.
+Normally, I would do it in a language I'm most comfy in, like C# or Java, but I've decided to do it here in C++ as a challenge.
+
+Time to plan the logic:
+
+In general, here's how I imagine things go:
+
+1. Run the console application.
+2. Console opens and greets you, asking what you'd like to do:
+	- Options are:
+		1. Write Haiku
+		2. View Haiku
+		3. Publish Haiku (Export to .txt document)
+		4. Quit Application
+			- END
+3. If the user wants to quit, quit.
+
+On paper, this seems pretty simple. However, I want to be methodical and use some good practices here.
+I think an easy way to control these different states is by implementing a state-related base class that has polymorphic children,
+all using the same inherited function, something like 'Execute()' or 'RunWithAuthority()'.
+
+So we can perform different operations (1 per class) based on this polymorphic implementation, but how do we direct back to a normal state?
+This is something that I tackled in the past, and I want to try something different here.
+
+So, we'll need:
+
+- (MAIN) ConsoleHaikuWriter.cpp
+	- Contains 'main' function, is our primary way in and out of the program.
+- AppLogic (State Pattern Invoker)
+	- AppState Base Class (virtual, perhaps?)
+		- WriteAppState (Writing Haiku Logic)
+		- ViewAppState (Viewing Haiku Logic)
+		- PublishAppState (Publishing Haiku Logic)
+
+My goals for this are:
+	- Trying to stay somewhat memory efficient
+		- Trying to minmax my lil' Dynamix Memory
+	- Incorporating pointers
+	- Making and using a Haiku Struct object
+		- Deleting instance when no longer needed
+	- Doing all this in a well-thought-out namespace!
+	- Making a great project :dromedary_camel:!!
+
+In any case, those are all of the initial thoughts I had, I'll push this and get to work!
+
