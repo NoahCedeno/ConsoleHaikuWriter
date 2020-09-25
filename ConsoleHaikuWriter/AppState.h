@@ -1,10 +1,11 @@
 #pragma once
+#include "ConsoleHelper.h"
 
 namespace HaikuApp {
 	class AppState
 	{
-	private:
-
+	protected:
+		ConsoleHelper* m_Writer;
 	public:
 		virtual void Update() = 0;
 	};

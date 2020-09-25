@@ -141,9 +141,13 @@
   <ItemGroup>
     <ClCompile Include="AppState.cpp" />
     <ClCompile Include="ConsoleHaikuWriter.cpp" />
+    <ClCompile Include="ConsoleHelper.cpp" />
+    <ClCompile Include="EnterAppState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppState.h" />
+    <ClInclude Include="ConsoleHelper.h" />
+    <ClInclude Include="EnterAppState.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
